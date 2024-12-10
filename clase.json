@@ -1,0 +1,7 @@
+{
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "correo": "juanito@gmail.com",
+    "edad": 15,
+    "soltero": false
+}
