@@ -1,4 +1,5 @@
 import bcrypt
+import time
 
 def main():
     password = input("Ingrese una contraseña: ").encode('utf-8')
@@ -15,4 +16,17 @@ def main():
         print("Contraseña correcta")
     else:
         print("Error de contraseña")
+
+    confirmacion = input("¿Desea volver a probar? (s/n): ")
+    time.sleep(1)
+
+    if confirmacion == "s":
+        print("Recargando...")
+        time.sleep(2)
+        print("-------------------------------")
+        main()
+    else:
+        time.sleep(1)
+        print("Adios")
+
 main()
